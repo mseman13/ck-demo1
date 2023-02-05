@@ -51,6 +51,22 @@
                     "Resource": "@tutorial_table:props.arn"
                 }]
             }
+        },
+
+    "sample_policy": {
+            "type": "@iam.policy",
+            "description": "CloudKommand Sample Policy",
+            "document": {
+                "Version": "2012-10-17",
+                "Statement": [{
+                    "Sid": "S3_ME",
+                    "Effect": "Allow",
+                    "Action": [
+                        "s3:*"
+                    ],
+                    "Resource": "*"
+                }]
+            }
         }
     },
     "repos": {
